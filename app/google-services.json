@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "413920786536",
+    "firebase_url": "https://waste-m-bff90.firebaseio.com",
+    "project_id": "waste-m-bff90",
+    "storage_bucket": "waste-m-bff90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413920786536:android:d08dba16e9800095cc63dd",
+        "android_client_info": {
+          "package_name": "com.example.wastemanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413920786536-7jrqfuo7qd19gavlmidmpt3lfsqdka9v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wastemanager",
+            "certificate_hash": "e0a81acfca47110fa57cb72b7d8f3500ccae80e0"
+          }
+        },
+        {
+          "client_id": "413920786536-ed5vobu84f0kbaung6b6na0re54m049d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrxgxm09NXFrrpjgLgsrJFN7pbiX-6ZTs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413920786536-ed5vobu84f0kbaung6b6na0re54m049d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

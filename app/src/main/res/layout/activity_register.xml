@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context=".register">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="50dp">
+
+        <ImageView
+            android:id="@+id/kachradabba"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/kachra"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="30dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kachradabba"
+            android:id="@+id/scrollView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/trans_white_rectangle"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome back !!!"
+                    android:textColor="@color/white"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Just a few details to get you started..."
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="30dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Name"
+                    android:background="@drawable/rounded_white"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:drawableLeft="@drawable/ic_face"
+                    android:textSize="14sp"
+                    android:drawablePadding="5dp"
+                    android:paddingStart="1dp"
+                    android:id="@+id/userName"
+                    android:layout_marginBottom="10dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Email"
+                    android:background="@drawable/rounded_white"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:textSize="14sp"
+                    android:drawablePadding="5dp"
+                    android:paddingStart="1dp"
+                    android:id="@+id/userEmail"
+                    android:layout_marginBottom="10dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Username"
+                    android:background="@drawable/rounded_white"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:drawableLeft="@drawable/ic_account_circle"
+                    android:textSize="14sp"
+                    android:drawablePadding="5dp"
+                    android:paddingStart="1dp"
+                    android:id="@+id/userName2"
+                    android:layout_marginBottom="10dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Password"
+                    android:background="@drawable/rounded_white"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:drawableLeft="@drawable/ic_https"
+                    android:textSize="14sp"
+                    android:drawablePadding="5dp"
+                    android:paddingStart="1dp"
+                    android:inputType="textPassword"
+                    android:id="@+id/userCPass"
+                    android:layout_marginBottom="10dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Contact"
+                    android:background="@drawable/rounded_white"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:drawableLeft="@drawable/ic_smartphone"
+                    android:textSize="14sp"
+                    android:drawablePadding="5dp"
+                    android:paddingStart="1dp"
+                    android:id="@+id/userContact"
+                    android:layout_marginBottom="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I agree to the Terms and Conditions"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:button="@drawable/radio_button"
+                    android:paddingLeft="5dp"
+                    android:textSize="11sp"/>
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:textColor="@color/white"
+                    android:text="Register"
+                    android:layout_gravity="center"
+                    android:background="@drawable/register_bck"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible"
+                    android:id="@+id/progresbar"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We will be sending you a confirmation code via SMS."
+            android:textColor="@color/white"
+            android:layout_below="@+id/scrollView"
+            android:layout_marginTop="17dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
