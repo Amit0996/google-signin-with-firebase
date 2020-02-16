@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         textView2 = (TextView) findViewById(R.id.textView2);
         textView3 = (TextView) findViewById(R.id.textView3);
         btn = (Button) findViewById(R.id.btn);
+        mAuth = FirebaseAuth.getInstance();
 
         handler.postDelayed(runnable, 1000); //splash time
 
@@ -83,11 +84,12 @@ public class MainActivity extends AppCompatActivity {
                         if (task.isSuccessful()){
                             Toast.makeText(MainActivity.this, "welcome", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(),dashboard.class));
+                        }else{
+                            Toast.makeText(MainActivity.this, "Error !" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
 
                     }
                 });
-                startActivity(new Intent(getApplicationContext(),forgot.class));
                     }
                 });
 

@@ -1,4 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:title="General">
+
+        <menu>
+
+            <item
+                android:id="@+id/home1"
+                android:icon="@drawable/ic_home_black_24dp"
+                android:title="Home" />
+
+        </menu>
+
+    </item>
+
+    <item android:title="Need Help">
+
+        <menu>
+
+            <item
+                android:id="@+id/help"
+                android:icon="@drawable/ic_help_black_24dp"
+                android:title="Support Desk" />
+
+        </menu>
+
+    </item>
+
+
 </menu>
